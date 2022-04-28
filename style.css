@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+    margin:0;
+    padding:0;
+    background-color: #EEEDE8;
+}
+*{
+    font-family:"Roboto",sans-serif;
+    
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+p{
+    font-weight: bold;
+    font-size: 22px;
+}
+span{
+    font-size: 18px;
+}
+main{
+    width: 100vw;
+    position: absolute;
+    top:0;
+    z-index:-1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper{
+    align-items:center;
+    justify-content: center;
+    padding:2em;
+}
+
+.mainBtn{
+    width: 200px;
+    height:60px;
+    border-radius:2px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: #4fc755;
+    border:0;
+    transition: 0.5s;
+}
+
+.mainBtn:active{
+    background-color: #1ea725;
+}
+
+ul{
+   list-style: none;
+   padding: 0;
+
+}
+button.material-icons{
+    transition:2s ease-in-out;
+    transform: rotate(360deg);
+    position:relative;  
+    border: none;
+    background-color: transparent;
+    z-index:10;
+}
+.container{
+    margin: 0 15em;
+    display: flex;
+}
+nav{
+    margin: 0;
+    border-bottom:  1px solid #c5c5c5 ;
+    background: transparent;
+}
+.btnWrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1200;
+}
+.menu-btn{
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius:4px;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn::before, .menu-btn::after{
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    border-radius:4px;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn::before{
+    transform: translateY(-8px);
+}
+.menu-btn::after{
+    transform: translateY(8px);
+}
+.btnWrapper.open .menu-btn{
+    transform: translate(-50px);
+    background-color: transparent;
+}
+.btnWrapper.open .menu-btn::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.btnWrapper.open .menu-btn::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
