@@ -7,19 +7,21 @@ body{
 }
 *{
     font-family:"Roboto",sans-serif;
-    
 }
 h1{
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
+
 }
 p{
     font-weight: bold;
     font-size: 22px;
+    text-align: center;
 }
 span{
     font-size: 18px;
+    text-align: center;
 }
 main{
     width: 100vw;
@@ -78,6 +80,7 @@ nav{
     border-bottom:  1px solid #c5c5c5 ;
     background: transparent;
 }
+/* menu hamburguer animado */
 .btnWrapper{
   position: relative;
   display: flex;
@@ -95,6 +98,7 @@ nav{
     border-radius:4px;
     transition: all 0.5s ease-in-out;
 }
+
 .menu-btn::before, .menu-btn::after{
     content: '';
     width: 25px;
@@ -119,4 +123,14 @@ nav{
 }
 .btnWrapper.open .menu-btn::after{
     transform: rotate(-45deg) translate(35px, 35px);
+}
+/*  */
+@media (max-width: 768px) {
+    .container{
+        margin:0 1em;
+    }
+    .btnWrapper{
+        z-index: 0;
+    }
+
 }
