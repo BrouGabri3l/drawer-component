@@ -39,7 +39,9 @@ Para fazer isso usamos
 this.shadow = this.attachShadow({mode:'open'})
  ```
 se inspecionarmos a nossa página no navegador a **shadowRoot** já se mostrará funcional
+
 ![Shadow Root](readmeImages/shadowRoot.png)
+
 Agora vamos criar o drawer
 
 Podemos utilizar o callback ```connectedCallback()```, que é executado sempre que o _customElement_ é conectado ao conteúdo
