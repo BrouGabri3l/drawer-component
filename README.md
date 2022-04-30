@@ -241,13 +241,11 @@ para adicionar a sombra shadow="true"
 ```
 
 
-
 ## Exemplos
-![Exemplo 1](readmeImages/exemplo1.gif)
+
 - Sem Sombra
 ![Exemplo 2](readmeImages/exemplo2.gif)
 - Fixo
-![!Exemplo 3](readmeImages/exemplo3.gif)
+![Exemplo 2](readmeImages/exemplo2.gif)
 - Com sombra
-
-
+![!Exemplo 3](readmeImages/exemplo3.gif)
