@@ -74,7 +74,7 @@ class Drawer extends HTMLElement {
         ${shadowOpt ? '<div class="shadow"></div>' : ''}
         `
         //pega o ultimo elemento, 'shadow', e adiciona evento fechar sombra
-        this.shadow.lastElementChild.onclick = () => {
+        this.shadow.querySelector('.shadow').onclick = () => {
             isOpen = false
             this.closeShadow()
         }
